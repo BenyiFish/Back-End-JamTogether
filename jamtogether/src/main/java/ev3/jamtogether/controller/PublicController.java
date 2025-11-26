@@ -26,7 +26,7 @@ public class PublicController {
         return ResponseEntity.ok(dataService.obtenerTodosLosArtistas());
     }
     
-    // Endpoints para cargar tu data.js a la BD (solo úsalos una vez con Postman)
+    
     @PostMapping("/bandas")
     public ResponseEntity<Banda> crearBanda(@RequestBody Banda banda) {
         return ResponseEntity.ok(dataService.guardarBanda(banda));
